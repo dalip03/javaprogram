@@ -81,13 +81,13 @@ public class Assignment1 {
 		 }
 		*/
 		
-		transaction t1 = new transaction(1, 10000, 1000);
-		transaction t2= new transaction(2, 20000, 2000);
-		transaction t3 = new transaction(3, 10000, 1000);
-		transaction t4 = new transaction(4, 15000, 1500);
-		transaction t5 = new transaction(5, 25000, 2500);
+		transaction transaction_1 = new transaction(1, 10000, 1000);
+		transaction transaction_2= new transaction(2, 20000, 2000);
+		transaction transaction_3 = new transaction(3, 10000, 1000);
+		transaction transaction_4 = new transaction(4, 15000, 1500);
+		transaction transaction_5 = new transaction(5, 25000, 2500);
 		
-		transaction[] transactionArray = new transaction[] {t1, t2, t3, t4, t5};
+		transaction[] transactionArray = new transaction[] {transaction_1, transaction_2, transaction_3, transaction_4, transaction_5};
 		for(transaction transaction2 : transactionArray) {
 			System.out.println(transaction2);
 		}
