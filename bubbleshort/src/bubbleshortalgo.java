@@ -1,21 +1,21 @@
-
 public class bubbleshortalgo {
 
 	public static void main(String[] args) {
 
-		int[] data = {11, 5, 20, 8, 17, 12};
-		
-		for(int i=0;i<data.length;i++) {
-		System.out.println("For i: "+i);
-		System.out.println("j is: ");
-		for(int j=0;j<data.length - i - 1; j++) {
-			System.out.println(j+" ");
-		}
-			
-		System.out.println();
-		}
-		
-		
+		int[] arr = {13, 9, 5, 2, 1, 10};
+   
+        for(int i =0; i<arr.length; i++){
+            for(int j=0; j<arr.length-1-i; j++){
+                if(arr[j] > arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+    }
+      for(int i : arr){
+          System.out.print(i+" ");
+      }
 		
 	}
 }
